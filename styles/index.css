@@ -1,26 +1,113 @@
 /* Nav */
-.nav-link {
-  font-family: "Roboto", sans-serif;
-  color: #d6d6d6;
-  font-weight: 400;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
 }
 
-.nav-link:hover {
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  list-style-type: none;
+  display: flex;
+  gap: 0.9375rem;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  flex-grow: 1;
+
+  @media (max-width: 576px) {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 3.75rem;
+    right: 0;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    width: auto;
+  }
+}
+
+.navbar .menu.active {
+  display: flex;
+}
+
+.menu-item {
+  cursor: pointer;
+}
+
+.menu-item__link {
+  text-decoration: none;
+}
+
+.dark-theme .menu-item__link {
+  text-decoration: none;
+}
+
+.menu-item__link:hover {
   color: #00bd95;
   text-decoration: underline;
-  text-decoration-thickness: 0.2rem; /* Ajusta el grosor de la línea */
+  text-decoration-thickness: 0.2rem;
 }
 
-.nav-link:active {
-  color: #00bd95 !important;
-  font-weight: 700 !important;
-}
-
-.navbar-toggler,
-.navbar-toggler-icon {
-  background-color: #00bd95;
+.dark-theme .menu-item__link:hover {
   color: #00bd95;
-  /* box-shadow: 0 0 10px rgba(0, 189, 149, 0.7), 0 0 20px rgba(0, 189, 149, 0.5); */
+  text-decoration: underline;
+  text-decoration-thickness: 0.2rem;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+  @media (max-width: 576px) {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 4rem;
+  }
+}
+
+/* Button Theme */
+.theme {
+  margin-left: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.theme:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .theme:hover {
+  background-color: rgba(238, 234, 234, 0.88);
+}
+
+.theme-icon {
+  font-size: 1.75rem;
+  color: #666666;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .theme-icon {
+  font-size: 1.75rem;
+  color: #d6d6d6;
+  transition: color 0.3s ease;
 }
 
 /* Section Info */
@@ -31,7 +118,7 @@
   justify-content: center;
   flex-direction: row;
 
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     flex-direction: column;
     text-align: center;
   }
@@ -41,7 +128,7 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     font-size: 2rem;
   }
 }
@@ -51,18 +138,30 @@
   line-height: 1.5;
   margin-bottom: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     font-size: 1rem;
   }
 }
 
 .photo {
   margin: 1rem 0 1rem 0;
+  background-color: #EAEAEA;
+  width: 50%;
+  height: auto;
+
+  @media (max-width: 576px) {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.dark-theme .photo {
+  margin: 1rem 0 1rem 0;
   background-color: #00bd95;
   width: 50%;
   height: auto;
 
-  @media (max-width: 992px) {
+  @media (max-width: 576px) {
     width: 60%;
     margin: 0 auto;
   }
@@ -77,13 +176,13 @@
 .skill {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Espacio entre los círculos */
+  gap: 0.625rem; /* Espacio entre los círculos */
   flex-wrap: wrap; /* Permite que los círculos se envuelvan cuando no caben */
 }
 
 .skill-circle {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
