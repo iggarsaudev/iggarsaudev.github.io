@@ -168,7 +168,7 @@
 }
 
 /* Section Skills */
-.skills {
+.skills { 
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -176,23 +176,42 @@
 .skill {
   display: flex;
   justify-content: center;
-  gap: 0.625rem; /* Espacio entre los círculos */
+  gap: 1rem; /* Espacio entre los círculos */
   flex-wrap: wrap; /* Permite que los círculos se envuelvan cuando no caben */
 }
 
 .skill-circle {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem; /* Tamaño del círculo */
+  height: 6rem; /* Tamaño del círculo */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-theme .skill-circle {
+  background-color: #3C4754;
+  box-shadow: 0 4px 6px rgba(0, 189, 149, 0.5);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-circle:hover {
+  transform: scale(1.05); /* Leve aumento de tamaño en hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Sombra más pronunciada */
+}
+
+.dark-theme .skill-circle:hover {
+  transform: scale(1.05); /* Leve aumento de tamaño en hover */
+  box-shadow: 0 6px 10px rgba(0, 189, 149, 0.8); /* Sombra más pronunciada */
 }
 
 .skill-circle__content {
-  width: 100%;
-  height: 100%;
+  width: 90%; /* Reduce un poco el espacio para que la imagen tenga margen */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,36 +219,11 @@
 }
 
 .skill-circle__text {
-  font-weight: bold;
-  text-transform: uppercase;  
+  display: none; /* El texto queda oculto por defecto */
 }
 
-.java {
-  background-color: #F8981D;
-  border: 0.2rem solid #F8981D;
-  color: #3E3E3E;
-}
-
-.sql {
-  background-color: #2c97e9;
-  border: 0.2rem solid #2c97e9;
-  color: #3E3E3E ;
-}
-
-.html {
-  background-color: #E34F26;
-  border: 0.2rem solid #E34F26;
-  color: #FFFFFF;
-}
-
-.css {
-  background-color: #2965F1;
-  border: 0.2rem solid #2965F1;
-  color: #FFFFFF;
-}
-
-.javascript {
-  background-color: #F7DF1E;
-  border: 0.2rem solid #F7DF1E;
-  color: #000000;
+.skill-icon {
+  width: 60%; /* Ajuste el tamaño de la imagen dentro del círculo */
+  height: auto;
+  object-fit: contain; /* Asegura que la imagen no se distorsione */
 }

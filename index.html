@@ -9,6 +9,7 @@
     rel="stylesheet" />
   <!-- Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <!-- End Fonts -->
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,13 +26,13 @@
     <nav class="navbar container color-primary font-text">
       <div class="logo">Portfolio</div>
       <ul class="menu">
-        <li class="menu-item"><a href="#" class="menu-item__link font-text">Home</a></li>
+        <li class="menu-item"><a href="#home" class="menu-item__link font-text">Home</a></li>
         <li class="menu-item"><a href="#skills" class="menu-item__link font-text">Habilidades</a></li>
         <li class="menu-item"><a href="#" class="menu-item__link font-text">Proyectos</a></li>
       </ul>
       <span class="material-symbols-outlined menu-toggle">
         menu
-        </span>
+      </span>
       <button id="toggle-theme" class="theme">
         <span class="material-symbols-outlined theme-icon">light_mode</span>
       </button>
@@ -40,7 +41,7 @@
   </header>
   <main>
     <!-- Section Info -->
-    <section class="info container color-primary">
+    <section id="home" class="info container color-primary">
       <div class="row align-items-center">
         <div class="col-12 col-sm-6 text-center text-md-left">
           <h1 class="name font-title font-bold">Ignacio García Sausor</h1>
@@ -63,32 +64,94 @@
           <h2 class="name font-title font-bold">Habilidades</h2>
         </div>
         <div class="skill col-12 col-sm-12 d-flex justify-content-center">
-          <div class="skill-circle java">
+          <div class="skill-circle .color-tertiary">
             <div class="skill-circle__content">
-              <span class="skill-circle__text">JAVA</span>
+              <img class="skill-icon" src="./img/skills/java.png" alt="Java">
             </div>
           </div>
-          <div class="skill-circle sql">
+          <div class="skill-circle .color-tertiary">
             <div class="skill-circle__content">
-              <span class="skill-circle__text">SQL</span>
+              <img class="skill-icon" src="./img/skills/sql.png" alt="SQL">
             </div>
           </div>
-          <div class="skill-circle html">
+          <div class="skill-circle .color-tertiary">
             <div class="skill-circle__content">
-              <span class="skill-circle__text">HTML</span>
+              <img class="skill-icon" src="./img/skills/html.png" alt="HTML">
             </div>
           </div>
-          <div class="skill-circle css">
+          <div class="skill-circle .color-tertiary">
             <div class="skill-circle__content">
-              <span class="skill-circle__text">CSS</span>
+              <img class="skill-icon" src="./img/skills/css.png" alt="CSS">
             </div>
           </div>
-          <div class="skill-circle javascript">
+          <div class="skill-circle .color-tertiary">
             <div class="skill-circle__content">
-              <span class="skill-circle__text">JS</span>
+              <img class="skill-icon" src="./img/skills/javascript.png" alt="JavaScript">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/git.png" alt="Git">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/github.png" alt="GitHub">
             </div>
           </div>
         </div>
+      </div>
+      <!-- Aprendizaje -->
+      <div class="row align-items-center">
+        <div class="col-12 col-sm-12 mt-5 text-center text-md-left">
+          <h2 class="name font-title font-bold">En continuo aprendizaje</h2>
+        </div>
+        <div class="skill col-12 col-sm-12 d-flex justify-content-center">
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/typescript.png" alt="TypeScript">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/mysql.png" alt="MySQL">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/mongodb.png" alt="MongoDB">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/nodejs.png" alt="NodeJS">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/express.svg" alt="ExpressJS">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/laravel.png" alt="Laravel">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/react.png" alt="React">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/vue.png" alt="VueJS">
+            </div>
+          </div>
+          <div class="skill-circle .color-tertiary">
+            <div class="skill-circle__content">
+              <img class="skill-icon" src="./img/skills/figma.png" alt="Figma">
+            </div>
+          </div>
       </div>
       </div>
     </section>
