@@ -33,25 +33,45 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <!-- Nav -->
       <nav class="navbar container color-primary font-text">
         <div class="logo">Portfolio</div>
         <ul class="menu">
           <li class="menu-item">
-            <a href="#home" class="menu-item__link font-text">Home</a>
+            <a href="#home" id="menuHome" class="menu-item__link font-text"
+              >Inicio</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#skills" class="menu-item__link font-text">Habilidades</a>
+            <a href="#skills" id="menuSkills" class="menu-item__link font-text"
+              >Habilidades</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#projects" class="menu-item__link font-text">Proyectos</a>
+            <a
+              href="#projects"
+              id="menuProjects"
+              class="menu-item__link font-text"
+              >Proyectos</a
+            >
           </li>
         </ul>
-        <span class="material-symbols-outlined menu-toggle"> menu </span>
-        <button id="toggle-theme" class="theme">
-          <span class="material-symbols-outlined theme-icon">light_mode</span>
-        </button>
+        <div class="controls">
+          <span class="material-symbols-outlined menu-toggle"> menu </span>
+          <button id="toggle-theme" class="theme">
+            <span class="material-symbols-outlined theme-icon">light_mode</span>
+          </button>
+          <button id="language-toggle" class="language">
+            <img
+              id="language-icon"
+              src="img/flag/spanish.png"
+              alt="Cambiar a Inglés"
+              width="24"
+              height="24"
+            />
+          </button>
+        </div>
       </nav>
       <!-- End Nav -->
     </header>
@@ -60,11 +80,16 @@
       <section id="home" class="info container color-primary">
         <div class="row align-items-center">
           <div class="col-12 col-sm-6 text-center text-md-left">
-            <h1 class="name font-title font-bold">Ignacio García Sausor</h1>
-            <p class="description font-text font-normal">
-              Desarrollador full-stack con experiencia en tecnologías modernas
-              como React, Node.js y MySQL. Apasionado por la creación de
-              soluciones innovadoras y eficientes.
+            <h1 id="infoName" class="name font-title font-bold">
+              ¡Hola, soy Ignacio García Sausor!
+            </h1>
+            <p id="infoDescription" class="description font-text font-normal">
+              Informático Técnico especializado en Java, Base de Datos y React,
+              con 8 años de experiencia en la aplicación de las últimas
+              tecnologías en el Servicio Postal. Actualmente busco nuevos retos
+              laborales que me permitan desarrollar mis conocimientos y
+              habilidades con motivación, sentido del compañerismo y ganas de
+              aprender para seguir desarrollándome profesionalmente.
             </p>
           </div>
           <div class="col-12 col-sm-6 d-flex justify-content-end">
@@ -81,7 +106,7 @@
       <section id="skills" class="skills container color-secundary">
         <div class="row align-items-center">
           <div class="col-12 col-sm-12 text-center text-md-left">
-            <h2 class="name font-title font-bold">Habilidades</h2>
+            <h2 id="skillsTitle" class="name font-title font-bold">Habilidades</h2>
           </div>
           <div class="skill col-12 col-sm-12 d-flex justify-content-center">
             <div class="skill-circle .color-tertiary">
@@ -140,7 +165,7 @@
         <!-- Aprendizaje -->
         <div class="row align-items-center">
           <div class="col-12 col-sm-12 mt-5 text-center text-md-left">
-            <h2 class="name font-title font-bold">En continuo aprendizaje</h2>
+            <h2 id="skillsLearning" class="name font-title font-bold">En continuo aprendizaje</h2>
           </div>
           <div class="skill col-12 col-sm-12 d-flex justify-content-center">
             <div class="skill-circle .color-tertiary">
@@ -232,7 +257,7 @@
       <section id="projects" class="projects container color-primary">
         <div class="row align-items-center">
           <div class="col-12 col-sm-12 text-center text-md-left">
-            <h2 class="name font-title font-bold">Proyectos</h2>
+            <h2 id="projectsTitle" class="name font-title font-bold">Proyectos</h2>
           </div>
         </div>
       </section>
@@ -246,6 +271,7 @@
     ></script>
     <script src="./js/theme.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/language.js"></script>
     <!-- End Bootstrap -->
   </body>
 </html>

@@ -1,4 +1,11 @@
 /* Nav */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -19,17 +26,19 @@
   padding: 0;
   justify-content: flex-end;
   flex-grow: 1;
+  top: 4.5rem; /* Ajusta para dejar espacio para los controles */
 
   @media (max-width: 576px) {
     display: none;
     flex-direction: column;
     background-color: #333;
     position: absolute;
-    top: 3.75rem;
+    top: 5.5rem; /* Incrementa este valor para bajar el menú */
     right: 0;
     padding: 0.625rem;
     border-radius: 0.3125rem;
     width: auto;
+    z-index: 10; /* Asegura que quede encima de otros elementos */
   }
 }
 
@@ -61,6 +70,20 @@
   text-decoration-thickness: 0.2rem;
 }
 
+/* Controls */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinea los controles al extremo derecho */
+  position: static; /* Asegura que no se muevan de su posición original */
+
+  @media (max-width: 576px) {
+    position: absolute; /* Mantén los controles ajustados en pantallas pequeñas */
+    right: 1rem;
+    top: 0.625rem;
+  }
+}
+
 .menu-toggle {
   display: none;
   cursor: pointer;
@@ -68,11 +91,36 @@
 
   @media (max-width: 576px) {
     display: block;
-    cursor: pointer;
     font-size: 1.5rem;
-    position: absolute;
-    right: 4rem;
+    cursor: pointer;
+    order: 1; /* Mueve la hamburguesa al principio */
   }
+}
+
+/* Button Language */
+.language {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+
+  @media (max-width: 576px) {
+    order: 0; /* Mantén el orden normal */
+  }
+}
+
+.language:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-language .language:hover {
+  background-color: rgba(238, 234, 234, 0.88);
 }
 
 /* Button Theme */
@@ -88,6 +136,10 @@
   height: 3.125rem;
   border-radius: 50%;
   transition: background-color 0.3s ease;
+
+  @media (max-width: 576px) {
+    order: 0; /* Mantén el orden normal */
+  }
 }
 
 .theme:hover {
@@ -117,10 +169,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin-top: 4.2rem;
 
   @media (max-width: 576px) {
     flex-direction: column;
     text-align: center;
+    margin-top: 3.5rem;
   }
 }
 
@@ -145,7 +199,7 @@
 
 .photo {
   margin: 1rem 0 1rem 0;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   width: 50%;
   height: auto;
 
@@ -168,7 +222,7 @@
 }
 
 /* Section Skills */
-.skills { 
+.skills {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -194,8 +248,8 @@
 }
 
 .dark-theme .skill-circle {
-  background-color: #3C4754;
-  box-shadow: 0 4px 6px rgba(0, 189, 149, 0.5);  
+  background-color: #3c4754;
+  box-shadow: 0 4px 6px rgba(0, 189, 149, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -229,7 +283,7 @@
 }
 
 /* Section Projects */
-.projects { 
+.projects {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
