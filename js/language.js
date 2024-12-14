@@ -6,6 +6,7 @@ const translations = {
         menuProjects: "Proyectos",
         infoName: "¡Hola, soy Ignacio García Sausor!",
         infoDescription: "Informático Técnico especializado en Java, Base de Datos y React, con 8 años de experiencia en la aplicación de las últimas tecnologías en el Servicio Postal. Actualmente busco nuevos retos laborales que me permitan desarrollar mis conocimientos y habilidades con motivación, sentido del compañerismo y ganas de aprender para seguir desarrollándome profesionalmente.",
+        infoCV: "Descargar CV",
         skillsTitle: "Habilidades",
         skillsLearning: "En continuo aprendizaje",
         projectsTitle: "Proyectos"
@@ -16,6 +17,7 @@ const translations = {
         menuProjects: "Projects",
         infoName: "Hi, I'm Ignacio García Sausor!",
         infoDescription: "Computer Technician specialized in Java, Database and React, with 8 years of experience in the application of the latest technologies in the Postal Service. I am currently looking for new work challenges that allow me to develop my knowledge and skills with motivation, a sense of camaraderie and desire to learn to continue developing professionally.",
+        infoCV: "Download CV",
         skillsTitle: "Skills",
         skillsLearning: "In continuous learning",
         projectsTitle: "Projects"
@@ -55,6 +57,10 @@ function changeLanguage() {
         translations[currentLanguage].menuProjects;
     document.getElementById("infoName").textContent =
         translations[currentLanguage].infoName;
+    document.getElementById("infoDescription").textContent =
+        translations[currentLanguage].infoDescription;
+    document.getElementById("infoCV").textContent =
+        translations[currentLanguage].infoCV;
     document.getElementById("skillsTitle").textContent =
         translations[currentLanguage].skillsTitle;
     document.getElementById("skillsLearning").textContent =
