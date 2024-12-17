@@ -9,14 +9,14 @@
 } */
 
 /* Fonts */
-.font-title {
+/* .font-title {
   font-family: "Poppins", sans-serif;
   color: #333333;
 }
 
 .dark-theme .font-title {
   font-family: "Poppins", sans-serif;
-  color: #00bd95;
+  color: #e2bb6d;
 }
 
 .font-text {
@@ -35,16 +35,16 @@
 
 .font-bold {
   font-weight: 700;
-}
+} */
 /* End Fonts */
 
 /* Colors */
-.color-primary {
+/* .color-primary {
   background-color: #F4F4F9;
 }
 
 .dark-theme .color-primary {
-  background-color: #20272f;
+  background-color: #14202E;
 }
 
 .color-secundary {
@@ -52,7 +52,7 @@
 }
 
 .dark-theme .color-secundary {
-  background-color: #171c22;
+  background-color: #1E3957;
 }
 
 .color-tertiary {
@@ -60,9 +60,8 @@
 }
 
 .dark-theme .color-tertiary {
-  /* background-color: #2e3740; */
-  background-color: #3C4754;
-}
+  background-color: #4A596A;
+} */
 /* End Colors */
 
 /* Shadow */
@@ -71,7 +70,8 @@
 }
 
 .dark-theme .shadow-green {
-  box-shadow: 0 4px 6px rgba(0, 189, 149, 0.5);
+  /* box-shadow: 0 4px 6px rgba(0, 189, 149, 0.5); */
+  box-shadow: 0 4px 6px rgba(226, 187, 109, 0.5);
 }
 
 .shadow-green-dark {
@@ -79,7 +79,8 @@
 }
 
 .dark-theme .shadow-green-dark {
-  box-shadow: 0 6px 10px rgba(0, 189, 149, 0.8);
+  /* box-shadow: 0 6px 10px rgba(0, 189, 149, 0.8); */
+  box-shadow: 0 6px 10px rgba(226, 187, 109, 0.8);
 }
 
 .shadow-green-glow {
@@ -87,7 +88,8 @@
 }
 
 .dark-theme .shadow-green-glow {
-  box-shadow: 0 0 10px rgba(0, 189, 149, 0.7), 0 0 20px rgba(0, 189, 149, 0.5);
+  /* box-shadow: 0 0 10px rgba(0, 189, 149, 0.7), 0 0 20px rgba(0, 189, 149, 0.5); */
+  box-shadow: 0 0 10px rgba(226, 187, 109, 0.7), 0 0 20px rgba(226, 187, 109, 0.5);
 }
 
 /* End Shadow */
