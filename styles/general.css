@@ -75,12 +75,12 @@
 }
 
 .shadow-green-dark {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8); */
 }
 
 .dark-theme .shadow-green-dark {
   /* box-shadow: 0 6px 10px rgba(0, 189, 149, 0.8); */
-  box-shadow: 0 6px 10px rgba(226, 187, 109, 0.8);
+  /* box-shadow: 0 6px 10px rgba(226, 187, 109, 0.8); */
 }
 
 .shadow-green-glow {

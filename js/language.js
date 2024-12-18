@@ -1,26 +1,36 @@
 // Objeto con las traducciones
 const translations = {
     es: {
-        menuHome: "Inicio",
+        menuHome: "Sobre mi",
         menuSkills: "Habilidades",
         menuProjects: "Proyectos",
         infoName: "¡Hola, soy Ignacio García Sausor!",
         infoDescription: "Informático Técnico especializado en Java, Base de Datos y React, con 8 años de experiencia en la aplicación de las últimas tecnologías en el Servicio Postal. Actualmente busco nuevos retos laborales que me permitan desarrollar mis conocimientos y habilidades con motivación, sentido del compañerismo y ganas de aprender para seguir desarrollándome profesionalmente.",
         infoCV: "Descargar CV",
         skillsTitle: "Habilidades",
-        skillsLearning: "En continuo aprendizaje",
-        projectsTitle: "Proyectos"
+        skillsFrontend: "Frontend",
+        skillsBackend: "Backend",
+        skillsBDA: "Bases de datos",
+        skillsVersions: "Control de versiones",
+        projectsTitle: "Proyectos",
+        viewProject: "Ver proyecto",
+        projectBeypei: "Una landing page profesional diseñada para Beypei con diseño responsivo."
     },
     en: {
-        menuHome: "Home",
+        menuHome: "About me",
         menuSkills: "Skills",
         menuProjects: "Projects",
         infoName: "Hi, I'm Ignacio García Sausor!",
         infoDescription: "Computer Technician specialized in Java, Database and React, with 8 years of experience in the application of the latest technologies in the Postal Service. I am currently looking for new work challenges that allow me to develop my knowledge and skills with motivation, a sense of camaraderie and desire to learn to continue developing professionally.",
-        infoCV: "Download CV",
+        infoCV: "Download Resume",
         skillsTitle: "Skills",
-        skillsLearning: "In continuous learning",
-        projectsTitle: "Projects"
+        skillsFrontend: "Frontend",
+        skillsBackend: "Backend",
+        skillsBDA: "Databases",
+        skillsVersions: "Version control",
+        projectsTitle: "Projects",
+        viewProject: "View Project",
+        projectBeypei: "A professional landing page designed for Beypei with a responsive design."
     },
 };
 
@@ -63,10 +73,20 @@ function changeLanguage() {
         translations[currentLanguage].infoCV;
     document.getElementById("skillsTitle").textContent =
         translations[currentLanguage].skillsTitle;
-    document.getElementById("skillsLearning").textContent =
-        translations[currentLanguage].skillsLearning;
+    document.getElementById("skillsFrontend").textContent =
+        translations[currentLanguage].skillsFrontend;
+    document.getElementById("skillsBackend").textContent =
+        translations[currentLanguage].skillsBackend;
+    document.getElementById("skillsBDA").textContent =
+        translations[currentLanguage].skillsBDA;
+    document.getElementById("skillsVersions").textContent =
+        translations[currentLanguage].skillsVersions;
     document.getElementById("projectsTitle").textContent =
         translations[currentLanguage].projectsTitle;
+    document.getElementById("projectBeypei").textContent =
+        translations[currentLanguage].projectBeypei;
+    document.getElementById("viewProject").textContent =
+        translations[currentLanguage].viewProject;
 }
 
 // Evento del botón
