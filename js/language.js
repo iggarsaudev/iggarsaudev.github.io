@@ -13,8 +13,27 @@ const translations = {
         skillsBDA: "Bases de datos",
         skillsVersions: "Control de versiones",
         projectsTitle: "Proyectos",
-        viewProject: "Ver proyecto",
-        projectBeypei: "Una landing page profesional diseñada para Beypei con diseño responsivo."
+        projectPortfolio: "Acceso al código del Portfolio personal realizado con HTML, CSS y JavaScript.",
+        projectBeypei: "Una landing page profesional diseñada para Beypei con diseño responsivo.",
+        viewProjectBeypei: "Ver proyecto",
+        projectDrinkTitle: "Buscador de Bebidas",
+        projectDrink: "Buscador de Bebidas usando API, React Router, Tailwind, Zustand, Zod.",
+        viewProjectDrink: "Ver proyecto",
+        projectCryptoTitle: "Cotizador Criptomonedas",
+        projectCrypto: "Cotizador de Criptomonedas usando React - TypeScript - Cripto App con Zod y Zustand.",
+        viewProjectCrypto: "Ver proyecto",
+        projectTemperatureTitle: "Buscador de Temperatura",
+        projectTemperature: "Buscador de Temperatura usando React - TypeScript - CC Modules y API's.",
+        viewProjectTemperature: "Ver proyecto",
+        projectVeterinarianTitle: "Consultas Veterinario",
+        projectVeterinarian: "Consultas Veterinario usando React - TypeScript - React Hook Form - Zustand - Tailwind.",
+        viewProjectVeterinarian: "Ver proyecto",
+        projectCalorieTitle: "Contador de Calorías",
+        projectCalorie: "Aplicación para contabilizar las calorías usando React y TypeScript.",
+        viewProjectCalorie: "Ver proyecto",
+        projectExpenseTitle: "Control de Gastos",
+        projectExpense: "Control de Gastos React, TypeScript, useReducer y Context API.",
+        viewProjectExpense: "Ver proyecto",
     },
     en: {
         menuHome: "About me",
@@ -29,8 +48,27 @@ const translations = {
         skillsBDA: "Databases",
         skillsVersions: "Version control",
         projectsTitle: "Projects",
-        viewProject: "View Project",
-        projectBeypei: "A professional landing page designed for Beypei with a responsive design."
+        projectPortfolio: "Access to the personal Portfolio code made with HTML, CSS and JavaScript.",
+        projectBeypei: "A professional landing page designed for Beypei with a responsive design.",
+        viewProjectBeypei: "View Project",
+        projectDrinkTitle: "Drink Finder",
+        projectDrink: "Drink Finder using API, React Router, Tailwind, Zustand,\n Zod.",
+        viewProjectDrink: "View Project",
+        projectCryptoTitle: "Cryptocurrency Quoter",
+        projectCrypto: "Cryptocurrency Quoter using React - TypeScript - Crypto App with Zod and Zustand.",
+        viewProjectCrypto: "View Project",
+        projectTemperatureTitle: "Temperature Finder",
+        projectTemperature: "Temperature Finder using React - TypeScript - CC Modules and API's.",
+        viewProjectTemperature: "View Project",
+        projectVeterinarianTitle: "Veterinarian Consultations",
+        projectVeterinarian: "Veterinarian Consultations using React - TypeScript - React Hook Form - Zustand - Tailwind.",
+        viewProjectVeterinarian: "View Project",
+        projectCalorieTitle: "Calorie Counter",
+        projectCalorie: "Application to count calories using React and TypeScript.",
+        viewProjectCalorie: "View Project",
+        projectExpenseTitle: "Expense Control",
+        projectExpense: "Expense Control React, TypeScript, useReducer and Context API.",
+        viewProjectExpense: "View Project",
     },
 };
 
@@ -83,10 +121,49 @@ function changeLanguage() {
         translations[currentLanguage].skillsVersions;
     document.getElementById("projectsTitle").textContent =
         translations[currentLanguage].projectsTitle;
+    document.getElementById("projectPortfolio").textContent =
+        translations[currentLanguage].projectPortfolio;
     document.getElementById("projectBeypei").textContent =
         translations[currentLanguage].projectBeypei;
-    document.getElementById("viewProject").textContent =
-        translations[currentLanguage].viewProject;
+    document.getElementById("viewProjectBeypei").textContent =
+        translations[currentLanguage].viewProjectBeypei;
+    document.getElementById("projectDrinkTitle").textContent =
+        translations[currentLanguage].projectDrinkTitle;
+    document.getElementById("projectDrink").textContent =
+        translations[currentLanguage].projectDrink;
+    document.getElementById("viewProjectDrink").textContent =
+        translations[currentLanguage].viewProjectDrink;
+    document.getElementById("projectCryptoTitle").textContent =
+        translations[currentLanguage].projectCryptoTitle;
+    document.getElementById("projectCrypto").textContent =
+        translations[currentLanguage].projectCrypto;
+    document.getElementById("viewProjectCrypto").textContent =
+        translations[currentLanguage].viewProjectCrypto;
+    document.getElementById("projectTemperatureTitle").textContent =
+        translations[currentLanguage].projectTemperatureTitle;
+    document.getElementById("projectTemperature").textContent =
+        translations[currentLanguage].projectTemperature;
+    document.getElementById("viewProjectTemperature").textContent =
+        translations[currentLanguage].viewProjectTemperature;
+    document.getElementById("projectVeterinarianTitle").textContent =
+        translations[currentLanguage].projectVeterinarianTitle;
+    document.getElementById("projectVeterinarian").textContent =
+        translations[currentLanguage].projectVeterinarian;
+    document.getElementById("viewProjectVeterinarian").textContent =
+        translations[currentLanguage].viewProjectVeterinarian;
+    document.getElementById("projectCalorieTitle").textContent =
+        translations[currentLanguage].projectCalorieTitle;
+    document.getElementById("projectCalorie").textContent =
+        translations[currentLanguage].projectCalorie;
+    document.getElementById("viewProjectCalorie").textContent =
+        translations[currentLanguage].viewProjectCalorie;
+    document.getElementById("projectExpenseTitle").textContent =
+        translations[currentLanguage].projectExpenseTitle;
+    document.getElementById("projectExpense").textContent =
+        translations[currentLanguage].projectExpense;
+    document.getElementById("viewProjectExpense").textContent =
+        translations[currentLanguage].viewProjectExpense;
+
 }
 
 // Evento del botón

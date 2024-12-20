@@ -481,11 +481,28 @@
 .card {
   padding: 0.5rem;
   width: 18rem;
+  height: 28rem; /* Altura fija para todas las tarjetas */
   background-color: var(--color-tertiary);
   font-family: var(--ff-text);
   font-weight: var(--fw-normal);
   color: var(--fc-text);
   border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantén el contenido y los botones separados */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Espaciado entre los elementos */
+}
+
+.card-img-top {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 12rem; /* Ajusta la altura según lo necesario */
+  object-fit: cover; /* Recorta la imagen para llenar el contenedor sin distorsionarse */
+  border-radius: 0.5rem; /* Opcional: para bordes redondeados */
 }
 
 .dark-theme .card {
@@ -504,6 +521,7 @@
 }
 
 .btn-primary {
+  margin-top: 0; /* Asegura que no se agregue espacio adicional */
   background-color: var(--dark-fc-title);
   font-weight: var(--fw-bold);
   color: var(--fc-text);
