@@ -44,12 +44,12 @@
   color: var(--dark-fc-text);
 }
 
-.navbar .logo {
+.logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar .menu {
+.menu {
   list-style-type: none;
   display: flex;
   gap: 0.9375rem;
@@ -73,7 +73,7 @@
   }
 }
 
-.navbar .menu.active {
+.menu.active {
   display: flex;
 
   @media (max-width: 576px) {
@@ -82,7 +82,7 @@
   }
 }
 
-.dark-theme .navbar .menu.active {
+.dark-theme .menu.active {
   @media (max-width: 576px) {
     background-color: var(--dark-color-tertiary);
     color: var(--dark-fc-title);
@@ -360,15 +360,89 @@
   opacity: 0;
 }
 
+/* Section Projects */
+.projects {
+  padding: 2rem;
+  background-color: var(--color-secundary);
+}
+
+.dark-theme .projects {
+  background-color: var(--dark-color-secundary);
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 0.5rem;
+  width: 18rem;
+  height: 28rem; /* Altura fija para todas las tarjetas */
+  background-color: var(--color-tertiary);
+  font-family: var(--ff-text);
+  font-weight: var(--fw-normal);
+  color: var(--fc-text);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantén el contenido y los botones separados */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Espaciado entre los elementos */
+}
+
+.card-img-top {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 12rem; /* Ajusta la altura según lo necesario */
+  object-fit: cover; /* Recorta la imagen para llenar el contenedor sin distorsionarse */
+  border-radius: 0.5rem; /* Opcional: para bordes redondeados */
+}
+
+.dark-theme .card {
+  background-color: var(--dark-color-tertiary);
+  color: var(--dark-fc-text);
+}
+
+.card-title {
+  font-family: var(--ff-text);
+  font-weight: var(--fw-bold);
+  color: var(--fc-text);
+}
+
+.dark-theme .card-title {
+  color: var(--dark-fc-text);
+}
+
+.btn-primary {
+  margin-top: 0; /* Asegura que no se agregue espacio adicional */
+  background-color: var(--dark-fc-title);
+  font-weight: var(--fw-bold);
+  color: var(--fc-text);
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #b39456;
+  font-weight: var(--fw-bold);
+  color: var(--fc-text);
+}
+
 /* Section Skills */
 .skills {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: var(--color-secundary);
+  background-color: var(--color-primary);
 }
 
 .dark-theme .skills {
-  background-color: var(--dark-color-secundary);
+  background-color: var(--dark-color-primary);
 }
 
 .skill {
@@ -461,76 +535,48 @@
   object-fit: contain; /* Asegura que la imagen no se distorsione */
 }
 
-/* Section Projects */
-.projects {
-  padding: 2rem;
-  background-color: var(--color-primary);
-}
-
-.dark-theme .projects {
-  background-color: var(--dark-color-primary);
-}
-
-.project-list {
+/* Footer */
+.footer {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-}
-
-.card {
-  padding: 0.5rem;
-  width: 18rem;
-  height: 28rem; /* Altura fija para todas las tarjetas */
-  background-color: var(--color-tertiary);
+  padding: 1.25rem 2rem;
+  background-color: var(--color-primary);
   font-family: var(--ff-text);
   font-weight: var(--fw-normal);
   color: var(--fc-text);
-  border: none;
+}
+
+.socials {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Mantén el contenido y los botones separados */
+  gap: 1rem;
+  list-style-type: none;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem; /* Espaciado entre los elementos */
+.socials-link {
+  text-decoration: none;
 }
 
-.card-img-top {
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-  height: 12rem; /* Ajusta la altura según lo necesario */
-  object-fit: cover; /* Recorta la imagen para llenar el contenedor sin distorsionarse */
-  border-radius: 0.5rem; /* Opcional: para bordes redondeados */
+.socials-img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.dark-theme .card {
-  background-color: var(--dark-color-tertiary);
+.socials-img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer-note {
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.dark-theme .footer {
+  background-color: var(--dark-color-primary);
   color: var(--dark-fc-text);
-}
-
-.card-title {
-  font-family: var(--ff-text);
-  font-weight: var(--fw-bold);
-  color: var(--fc-text);
-}
-
-.dark-theme .card-title {
-  color: var(--dark-fc-text);
-}
-
-.btn-primary {
-  margin-top: 0; /* Asegura que no se agregue espacio adicional */
-  background-color: var(--dark-fc-title);
-  font-weight: var(--fw-bold);
-  color: var(--fc-text);
-  border: none;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #b39456;
-  font-weight: var(--fw-bold);
-  color: var(--fc-text);
 }
