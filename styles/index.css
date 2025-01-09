@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.25rem;
+  padding: 0.625rem 1.25rem;
   background-color: var(--color-primary);
   font-family: var(--ff-text);
   font-weight: var(--fw-normal);
