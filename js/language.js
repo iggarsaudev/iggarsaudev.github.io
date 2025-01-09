@@ -34,6 +34,7 @@ const translations = {
         projectExpenseTitle: "Control de Gastos",
         projectExpense: "Control de Gastos React, TypeScript, useReducer y Context API.",
         viewProjectExpense: "Ver proyecto",
+        footerNote: "©2025 Ignacio García Sausor - Todos los derechos reservados",
     },
     en: {
         menuHome: "About me",
@@ -69,6 +70,7 @@ const translations = {
         projectExpenseTitle: "Expense Control",
         projectExpense: "Expense Control React, TypeScript, useReducer and Context API.",
         viewProjectExpense: "View Project",
+        footerNote: "©2025 Ignacio García Sausor - All rights reserved",
     },
 };
 
@@ -163,7 +165,8 @@ function changeLanguage() {
         translations[currentLanguage].projectExpense;
     document.getElementById("viewProjectExpense").textContent =
         translations[currentLanguage].viewProjectExpense;
-
+    document.getElementById("footerNote").textContent =
+        translations[currentLanguage].footerNote;
 }
 
 // Evento del botón
