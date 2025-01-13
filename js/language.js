@@ -5,7 +5,8 @@ const translations = {
         menuSkills: "Habilidades",
         menuProjects: "Proyectos",
         infoName: "¡Hola, soy Ignacio García Sausor!",
-        infoDescription: "Informático Técnico especializado en Java, Base de Datos y React, con 8 años de experiencia en la aplicación de las últimas tecnologías en el Servicio Postal. Actualmente busco nuevos retos laborales que me permitan desarrollar mis conocimientos y habilidades con motivación, sentido del compañerismo y ganas de aprender para seguir desarrollándome profesionalmente.",
+        infoDescription: "Informático Técnico con amplia experiencia en Java, Bases de Datos y React, y más de 8 años desarrollando proyectos tecnológicos para optimizar y digitalizar los procesos diarios de la Administración Pública (AAPP) en las áreas de la Gestión Tributaria, Recaudación, Inspección, Multas y Notificación.",
+        infoDescription2: "He liderado equipos multidisciplinares, coordinado proyectos de integración de sistemas y formado a personal técnico. Actualmente busco nuevos retos laborales que me permitan desarrollar mis conocimientos y habilidades con motivación, sentido del compañerismo y ganas de aprender para seguir desarrollándome profesionalmente.",
         infoCV: "Descargar CV",
         skillsTitle: "Habilidades",
         skillsFrontend: "Frontend",
@@ -41,7 +42,8 @@ const translations = {
         menuSkills: "Skills",
         menuProjects: "Projects",
         infoName: "Hi, I'm Ignacio García Sausor!",
-        infoDescription: "Computer Technician specialized in Java, Database and React, with 8 years of experience in the application of the latest technologies in the Postal Service. I am currently looking for new work challenges that allow me to develop my knowledge and skills with motivation, a sense of camaraderie and desire to learn to continue developing professionally.",
+        infoDescription: "Technical Computer Scientist with extensive experience in Java, Databases and React, and more than 8 years developing technological projects to optimize and digitize the daily processes of the Public Administration (AAPP) in the areas of Tax Management, Collection, Inspection, Fines and Notification.",
+        infoDescription2: "I have led multidisciplinary teams, coordinated systems integration projects and trained technical personnel. I am currently looking for new work challenges that allow me to develop my knowledge and skills with motivation, a sense of camaraderie and desire to learn to continue developing professionally.",
         infoCV: "Download Resume",
         skillsTitle: "Skills",
         skillsFrontend: "Frontend",
@@ -109,6 +111,8 @@ function changeLanguage() {
         translations[currentLanguage].infoName;
     document.getElementById("infoDescription").textContent =
         translations[currentLanguage].infoDescription;
+    document.getElementById("infoDescription2").textContent =
+        translations[currentLanguage].infoDescription2;
     document.getElementById("infoCV").textContent =
         translations[currentLanguage].infoCV;
     document.getElementById("skillsTitle").textContent =
