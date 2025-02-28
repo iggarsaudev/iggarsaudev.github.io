@@ -14,7 +14,7 @@ const translations = {
         skillsBDA: "Bases de datos",
         skillsVersions: "Control de versiones",
         projectsTitle: "Proyectos",
-        projectPortfolio: "Acceso al código del Portfolio personal realizado con HTML, CSS y JavaScript.",
+        // projectPortfolio: "Acceso al código del Portfolio personal realizado con HTML, CSS y JavaScript.",
         projectBeypei: "Una landing page profesional diseñada para Beypei con diseño responsivo.",
         viewProjectBeypei: "Ver proyecto",
         projectDrinkTitle: "Buscador de Bebidas",
@@ -35,6 +35,8 @@ const translations = {
         projectExpenseTitle: "Control de Gastos",
         projectExpense: "Control de Gastos React, TypeScript, useReducer y Context API.",
         viewProjectExpense: "Ver proyecto",
+        projectIglusshop: "Tienda online usando HTML, CSS, JS y TS, metodología BEM y gestión de API's.",
+        viewProjectIglusshop: "Ver proyecto",
         footerNote: "©2025 Ignacio García Sausor - Todos los derechos reservados",
     },
     en: {
@@ -51,7 +53,7 @@ const translations = {
         skillsBDA: "Databases",
         skillsVersions: "Version control",
         projectsTitle: "Projects",
-        projectPortfolio: "Access to the personal Portfolio code made with HTML, CSS and JavaScript.",
+        // projectPortfolio: "Access to the personal Portfolio code made with HTML, CSS and JavaScript.",
         projectBeypei: "A professional landing page designed for Beypei with a responsive design.",
         viewProjectBeypei: "View Project",
         projectDrinkTitle: "Drink Finder",
@@ -72,6 +74,8 @@ const translations = {
         projectExpenseTitle: "Expense Control",
         projectExpense: "Expense Control React, TypeScript, useReducer and Context API.",
         viewProjectExpense: "View Project",
+        projectIglusshop: "Online store using HTML, CSS, JS and TS, BEM methodology and API management.",
+        viewProjectIglusshop: "View Project",
         footerNote: "©2025 Ignacio García Sausor - All rights reserved",
     },
 };
@@ -127,8 +131,8 @@ function changeLanguage() {
         translations[currentLanguage].skillsVersions;
     document.getElementById("projectsTitle").textContent =
         translations[currentLanguage].projectsTitle;
-    document.getElementById("projectPortfolio").textContent =
-        translations[currentLanguage].projectPortfolio;
+    // document.getElementById("projectPortfolio").textContent =
+    //     translations[currentLanguage].projectPortfolio;
     document.getElementById("projectBeypei").textContent =
         translations[currentLanguage].projectBeypei;
     document.getElementById("viewProjectBeypei").textContent =
@@ -169,6 +173,10 @@ function changeLanguage() {
         translations[currentLanguage].projectExpense;
     document.getElementById("viewProjectExpense").textContent =
         translations[currentLanguage].viewProjectExpense;
+    document.getElementById("projectIglusshop").textContent =
+        translations[currentLanguage].projectIglusshop;
+    document.getElementById("viewProjectIglusshop").textContent =
+        translations[currentLanguage].viewProjectIglusshop;
     document.getElementById("footerNote").textContent =
         translations[currentLanguage].footerNote;
 }

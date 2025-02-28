@@ -404,7 +404,7 @@
 .card-img-top {
   width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
   height: 12rem; /* Ajusta la altura según lo necesario */
-  object-fit: cover; /* Recorta la imagen para llenar el contenedor sin distorsionarse */
+  object-fit: fill; /* Recorta la imagen para llenar el contenedor sin distorsionarse */
   border-radius: 0.5rem; /* Opcional: para bordes redondeados */
 }
 
